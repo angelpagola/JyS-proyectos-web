@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/* colors */
+/* fuente tipo de letra*/
+/* fuente tamaño de letras */
+/*Fuente-icons*/
+/*Densiddad de las fuentes*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif; }
+
+a {
+  text-decoration: none; }
+
+/*Estilos del menu y navegador*/
+.main-header {
+  width: 100%;
+  position: fixed;
+  height: 80px;
+  top: 0;
+  z-index: 2000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.icon-menu {
+  display: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 30px; }
+
+.logo {
+  display: flex;
+  align-items: center; }
+  .logo .logo__img {
+    height: 80px;
+    width: 80px; }
+  .logo .logo__texto {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px; }
+
+.menu {
+  position: relative;
+  display: flex;
+  transition: all 0.5s; }
+  .menu .menu__content {
+    display: flex; }
+  .menu .menu__item {
+    list-style: none;
+    display: flex;
+    align-items: center; }
+  .menu .menu__link {
+    height: 80px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+    transition: all 0.1s; }
+  .menu .menu__link:hover,
+  .menu .select {
+    background-color: rgba(0, 0, 0, 0.3); }
+
+@media screen and (max-width: 760px) {
+  .icon-menu {
+    display: block; }
+
+  .menu {
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    width: 100%; }
+    .menu .menu__content {
+      background-color: red;
+      flex-direction: column;
+      width: 100%; }
+      .menu .menu__content .menu__item {
+        width: 100%; }
+      .menu .menu__content .menu__link {
+        width: 100%;
+        padding: 0;
+        height: 50px;
+        padding-left: 50px;
+        color: #dc143c;
+        background-color: #ffffff;
+        font-weight: normal;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5); }
+      .menu .menu__content .menu__link:hover,
+      .menu .menu__content .select {
+        background-color: #dc143c;
+        color: #ffffff; }
+
+  .mostrar {
+    left: 0; } }
+
+/*# sourceMappingURL=style.css.map */
