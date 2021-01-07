@@ -39,62 +39,69 @@
         </nav>
     </header>
     <main class="main">
-        <div class="slider" id="slider">
-            <section class="slider__section">
-                <div class="slider__contenido">
-                    <h2 class="slider__contenido__titulo">Diseño de páginas web</h2>
-                    <p class="slider__contenido__texto">Reforzamos la imagen de su empresa</p>
-                    <a href="" class="slider__contenido__link">Ver paquetes</a>
-                </div>
-                <img src="images/1.jpg" alt="" class="slider__img">
-            </section>
-            <section class="slider__section">
-                <div class="slider__contenido">
-                    <h2 class="slider__contenido__titulo">Hosting</h2>
-                    <p class="slider__contenido__texto">Planes de Hosting seguros y confiables</p>
-                    <a href="" class="slider__contenido__link">Ver planes</a>
-                </div>
-                <img src="images/2.jpg" alt="" class="slider__img">
-            </section>
-            <section class="slider__section">
-                <div class="slider__contenido">
-                    <h2 class="slider__contenido__titulo">Sitios Web adaptables</h2>
-                    <p class="slider__contenido__texto">Tu sitio web se adapta a todos los dispositivos</p>
-                    <a href="" class="slider__contenido__link">Más información</a>
-                </div>
-                <img src="images/3.jpg" alt="" class="slider__img">
-            </section>
-            <section class="slider__section">
-                <div class="slider__contenido">
-                    <h2 class="slider__contenido__titulo">Tutoriales</h2>
-                    <p class="slider__contenido__texto">Videos y artículos sobre Diseño web</p>
-                    <a href="" class="slider__contenido__link">Aprender</a>
-                </div>
-                <img src="images/4.jpg" alt="" class="slider__img">
-            </section>
-
-            <div class="btn-prev" id="btn-prev"><i class="fas fa-chevron-left"></i></div>
-            <div class="btn-next" id="btn-next"><i class="fas fa-chevron-right"></i></div>
-
+        <div class="slides" id="slides">
+            <div class="slides-container">
+                <section class="slides__section">
+                    <div class="slides__contenido">
+                        <h2 class="slides__contenido__titulo">Diseño de páginas web</h2>
+                        <p class="slides__contenido__texto">Reforzamos la imagen de su empresa</p>
+                        <a href="" class="slides__contenido__link">Ver paquetes</a>
+                    </div>
+                    <img src="images/1.jpg" alt="" class="slides_img">
+                </section>
+                <section class="slides__section">
+                    <div class="slides__contenido">
+                        <h2 class="slides__contenido__titulo">Hosting</h2>
+                        <p class="slides__contenido__texto">Planes de Hosting seguros y confiables</p>
+                        <a href="" class="slides__contenido__link">Ver planes</a>
+                    </div>
+                    <img src="images/2.jpg" alt="" class="slides__img">
+                </section>
+                <section class="slides__section">
+                    <div class="slides__contenido">
+                        <h2 class="slides__contenido__titulo">Sitios Web adaptables</h2>
+                        <p class="slides__contenido__texto">Tu sitio web se adapta a todos los dispositivos</p>
+                        <a href="" class="slides__contenido__link">Más información</a>
+                    </div>
+                    <img src="images/3.jpg" alt="" class="slides__img">
+                </section>
+                <section class="slides__section">
+                    <div class="slides__contenido">
+                        <h2 class="slides__contenido__titulo">Tutoriales</h2>
+                        <p class="slides__contenido__texto">Videos y artículos sobre Diseño web</p>
+                        <a href="" class="slides__contenido__link">Aprender</a>
+                    </div>
+                    <img src="images/4.jpg" alt="" class="slides__img">
+                </section>
+            </div>
+            <div class="slides-navigation">
+                <a href="#" class="next" id="next"><i class="fas fa-chevron-right"></i></a>
+                <a href="#" class="prev" id="prev"><i class="fas fa-chevron-left"></i></a>
+            </div>
         </div>
     </main>
     <footer class="main-footer">
-        <h2 class="main-footer__titulo">J&G Proyectos Web</h2>
-        <div class="datos">
-            <ul>
-                <li class="datos__item">consultas@jygproyectosweb.com</li>
-                <li class="datos__item">Celular: 971879983 - Ica - Perú</li>
-            </ul>
+        <div class="footer__titulo-contenedor">
+            <h2 class="main-footer__titulo">J&G Proyectos Web</h2>
         </div>
-        <div class="sociales">
-            <a href="" class="sociales__link"><i class="fab fa-facebook-f"></i></a>
-            <a href="" class="sociales__link"><i class="fab fa-twitter"></i></a>
-            <a href="" class="sociales__link"><i class="fab fa-youtube"></i></a>
-            <a href="" class="sociales__link"><i class="fab fa-linkedin-in"></i></a>
+
+        <div class="datos-contenedor">
+            <div class="sociales">
+                <a href="" class="sociales__link facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="" class="sociales__link twitter"><i class="fab fa-twitter"></i></a>
+                <a href="" class="sociales__link youtube"><i class="fab fa-youtube"></i></a>
+                <a href="" class="sociales__link linkedin"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="datos">
+                <a href="#" class="datos__item">consultas@jygproyectosweb.com</a>
+                <a href="#" class="datos__item">Celular: 971879983 - Ica - Perú</a>
+            </div>
         </div>
     </footer>
 
     <script src="js/menu.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.superslides.js"></script>
 </body>
 
 </html>

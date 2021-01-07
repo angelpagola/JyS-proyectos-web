@@ -1,7 +1,7 @@
 /* colors */
 
 $primary-color: #dc143c;
-$primary-color-dark: #dc143c;
+$primary-color-opacity: rgba(220, 20, 60, 0.5);
 $secondary-color: #aa66cc;
 $secondary-color-dark: #9933cc;
 $success-color: #00c851;
@@ -24,6 +24,7 @@ $special-color: #37474f;
 $special-color-dark: #263238;
 $color-white:#ffffff;
 $color-black:#000000;
+$color-black-opacity:rgba(0, 0, 0, .3);
 
 /* fuente tipo de letra*/
 
@@ -32,6 +33,7 @@ sans-serif;
 
 /* fuente tamaño de letras */
 
+$fuente-big:40px;
 $fuente-titulo:20px;
 $fuente-subtitulo:18px;
 $fuente-texto:16px;
