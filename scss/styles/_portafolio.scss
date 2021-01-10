@@ -1,0 +1,72 @@
+@mixin crea-caja {
+    background: #fbfbfb;
+    margin: 10px 0;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+@mixin crea-caja-hover {
+    -webkit-box-shadow: 0 0px 15px 0.1px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0px 15px 0.1px rgba(0, 0, 0, 0.7);
+    -webkit-transform: scale(1.003);
+    -ms-transform: scale(1.003);
+    transform: scale(1.003);
+}
+
+main {
+    .container {
+        width: 90%;
+        margin: auto;
+        .grupo-portafolio {
+            padding: 20px 0;
+            .grupo__titulo {
+                width: 100%;
+                text-align: center;
+                font-size: $fuente-titulo;
+                color: $primary-color;
+                padding: 10px 0;
+                margin: 10px 0;
+                border-bottom: 1px solid $stylish-color;
+                font-weight: $densidad-bold;
+            }
+            .grupo__descripcion {
+                width: 100%;
+                text-align: center;
+                font-size: $fuente-texto;
+                color: $color-black;
+                padding: 10px 0;
+                margin: 10px 0;
+                border-bottom: 1px solid $stylish-color;
+            }
+            .grupo__contenido {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .columna {
+                    @include crea-caja;
+                    width: 30%;
+                    text-align: center;
+                    transition: all 0.2s;
+                    .columna__titulo {
+                        margin-bottom: 10px;
+                        font-size: $fuente-subtitulo;
+                        font-weight: $densidad-bold;
+                    }
+                    .fancybox {
+                        width: 100%;
+                        height: 350px;
+                        display: block;
+                        .columna__img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+                .columna:hover {
+                    @include crea-caja-hover();
+                }
+            }
+        }
+    }
+}

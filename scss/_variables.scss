@@ -25,6 +25,8 @@ $special-color-dark: #263238;
 $color-white:#ffffff;
 $color-black:#000000;
 $color-black-opacity:rgba(0, 0, 0, .3);
+$color-black-opacity-full:rgba(0, 0, 0, .1);
+$color-gradient:linear-gradient(#fff 0%, #f6f6f6 47%, gainsboro 100%);
 
 /* fuente tipo de letra*/
 
@@ -33,7 +35,7 @@ sans-serif;
 
 /* fuente tamaño de letras */
 
-$fuente-big:40px;
+$fuente-big:30px;
 $fuente-titulo:20px;
 $fuente-subtitulo:18px;
 $fuente-texto:16px;
