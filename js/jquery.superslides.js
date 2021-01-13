@@ -124,13 +124,13 @@
                         position: 'relative',
                         overflow: 'hidden',
                         width: '100%',
-                        height: "100vh"
+                        height: "100%"
                     });
 
                     that.$control.css({
                         position: 'relative',
                         transform: 'translate3d(0)',
-                        height: '100vh',
+                        height: '100%',
                         width: that.width * multiplier,
                         left: -that.width
                     });

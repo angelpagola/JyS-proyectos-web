@@ -1,0 +1,15 @@
+@mixin crea-caja {
+    background: #fbfbfb;
+    margin: 10px 0;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+@mixin crea-caja-hover {
+    -webkit-box-shadow: 0 0px 15px 0.1px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0px 15px 0.1px rgba(0, 0, 0, 0.7);
+    -webkit-transform: scale(1.003);
+    -ms-transform: scale(1.003);
+    transform: scale(1.003);
+}

@@ -1,0 +1,20 @@
+.grupo__titulo {
+    width: 100%;
+    text-align: center;
+    font-size: $fuente-titulo;
+    color: $primary-color;
+    padding: 10px 0;
+    margin: 10px 0;
+    border-bottom: 1px solid $stylish-color;
+    font-weight: $densidad-bold;
+}
+
+.grupo__descripcion {
+    width: 100%;
+    text-align: center;
+    font-size: $fuente-texto;
+    color: $color-black;
+    padding: 10px 0;
+    margin: 10px 0;
+    border-bottom: 1px solid $stylish-color;
+}
