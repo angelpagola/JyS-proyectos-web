@@ -1,0 +1,70 @@
+@import "../mixin";
+.icon__web {
+    font-size: 50px;
+    color: $primary-color;
+}
+
+.icon__item {
+    font-size: 80px;
+    color: $primary-color;
+}
+
+.item__titulo {
+    a {
+        display: block;
+        color: $primary-color;
+        font-size: $fuente-titulo;
+        margin: 10px;
+        font-weight: $densidad-bold;
+        transition: all 0.5s;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.item__precio {
+    font-size: $fuente-titulo;
+    font-weight: $densidad-bold;
+}
+
+.item {
+    list-style: none;
+    display: block;
+    padding: 10px;
+    border: 1px solid #333;
+    margin: 10px;
+}
+
+.item__link {
+    display: block;
+    padding: 10px;
+    width: 150px;
+    margin: auto;
+    background-color: $primary-color;
+    color: $color-white;
+    border-radius: 20px;
+    transition: all .5s;
+    margin-top: 20px;
+}
+
+.item__link:hover {
+    transform: scale(1.05);
+}
+
+.boton {
+    margin: auto;
+    margin-bottom: 20px;
+    .boton__link {
+        @include crea-caja;
+        display: block;
+        width: 100%;
+        font-size: $fuente-titulo;
+        text-align: center;
+        color: $primary-color;
+        font-weight: $densidad-bold;
+    }
+    .boton__link:hover {
+        @include crea-caja-hover();
+    }
+}
