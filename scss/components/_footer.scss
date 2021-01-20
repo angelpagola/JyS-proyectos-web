@@ -37,6 +37,8 @@
                 color: $color-white;
                 font-size: $fuente-texto;
                 border-radius: 50%;
+                opacity: .65;
+                transition: all 0.2s;
             }
             .sociales__link.facebook {
                 background-color: #3b5998;
@@ -49,6 +51,9 @@
             }
             .sociales__link.linkedin {
                 background-color: #0e76a8;
+            }
+            .sociales__link:hover {
+                opacity: 1;
             }
         }
         .datos {

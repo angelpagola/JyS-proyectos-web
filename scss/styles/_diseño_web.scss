@@ -53,18 +53,20 @@
 }
 
 .boton {
-    margin: auto;
-    margin-bottom: 20px;
-    .boton__link {
-        @include crea-caja;
-        display: block;
-        width: 100%;
-        font-size: $fuente-titulo;
-        text-align: center;
-        color: $primary-color;
-        font-weight: $densidad-bold;
-    }
-    .boton__link:hover {
-        @include crea-caja-hover();
-    }
+    /* margin: auto; */
+    margin: 10px auto;
+}
+
+.boton__link {
+    @include crea-caja;
+    display: block;
+    width: 100%;
+    font-size: $fuente-titulo;
+    text-align: center;
+    color: $primary-color;
+    font-weight: $densidad-bold;
+}
+
+.boton__link:hover {
+    @include crea-caja-hover();
 }

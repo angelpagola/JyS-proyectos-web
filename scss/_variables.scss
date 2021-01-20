@@ -28,6 +28,13 @@ $color-black-opacity:rgba(0, 0, 0, .3);
 $color-black-opacity-full:rgba(0, 0, 0, .1);
 $color-gradient:linear-gradient(#fff 0%, #f6f6f6 47%, gainsboro 100%);
 
+/*colores asignados*/
+
+$border-color:#333;
+$border-color-opacity:rgba(51, 51, 51, .5);
+$header-color:$color-gradient;
+$footer-color:radial-gradient(circle at 50% 50%, #fcfcfa 0, #eeeef1 50%, #e0e0e8 100%);
+
 /* fuente tipo de letra*/
 
 $fuente-roboto: 'Roboto',
@@ -36,8 +43,8 @@ sans-serif;
 /* fuente tamaño de letras */
 
 $fuente-big:30px;
-$fuente-titulo:20px;
-$fuente-subtitulo:18px;
+$fuente-titulo:22px;
+$fuente-subtitulo:20px;
 $fuente-texto:16px;
 $fuente-alternativo:12px;
 $fuente-minimo:10px;
@@ -45,11 +52,35 @@ $fuente-minimo:10px;
 /*Fuente-icons*/
 
 $fuente-icon-big:22px;
-$fuente-icon-medium:18 px;
+$fuente-icon-medium:18px;
 $fuente-icon-small:14px;
 
 /*Densiddad de las fuentes*/
 
 $densidad-normal:normal;
-$densidad-semibold: 500;
 $densidad-bold:bold;
+//relativos al padre
+$densidad-lighter:lighter;
+$densidad-bolder:bolder;
+// Valores globales 
+$densidad-inherit:inherit;
+$densidad-initial:initial;
+$densidad-unset:unset;
+//valores númericos
+$densidad-100:100;
+$densidad-200:200;
+$densidad-300:300;
+$densidad-400:400;
+$densidad-500:500;
+$densidad-600:600;
+$densidad-700:700;
+$densidad-800:800;
+$densidad-900:900;
+
+/*Tamaño header*/
+
+$header:60px;
+
+/*Tamaño footer*/
+
+$footer:80px;

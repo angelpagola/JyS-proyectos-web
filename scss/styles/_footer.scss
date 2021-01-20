@@ -1,9 +1,9 @@
 .main-footer {
     position: relative;
-    top: 80px;
+    top: $footer;
     width: 100%;
     padding: 5px;
-    background-image: radial-gradient(circle at 50% 50%, #fcfcfa 0, #eeeef1 50%, #e0e0e8 100%);
+    background-image: $footer-color;
     z-index: 100;
     box-sizing: border-box;
     .footer__titulo-contenedor {
@@ -37,6 +37,8 @@
                 color: $color-white;
                 font-size: $fuente-texto;
                 border-radius: 50%;
+                opacity: .65;
+                transition: all 0.2s;
             }
             .sociales__link.facebook {
                 background-color: #3b5998;
@@ -49,6 +51,9 @@
             }
             .sociales__link.linkedin {
                 background-color: #0e76a8;
+            }
+            .sociales__link:hover {
+                opacity: 1;
             }
         }
         .datos {

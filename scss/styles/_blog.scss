@@ -13,7 +13,7 @@
     }
     .articulo__fecha {
         font-size: $fuente-texto;
-        font-weight: $densidad-semibold;
+        font-weight: $densidad-bold;
         padding: 5px;
         box-sizing: border-box;
         text-align: left;
@@ -39,7 +39,7 @@
             flex-direction: column;
             justify-content: space-between;
             .read__descripcion {
-                font-weight: $densidad-semibold;
+                font-weight: $densidad-bold;
             }
             .read__more {
                 color: $primary-color;

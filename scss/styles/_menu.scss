@@ -3,7 +3,7 @@
 .main-header {
     width: 100%;
     position: fixed;
-    height: 80px;
+    height: $header;
     top: 0;
     z-index: 2000;
     display: flex;
@@ -11,7 +11,7 @@
     align-items: center;
     padding: 0 20px;
     box-sizing: border-box;
-    background: $color-gradient;
+    background: $header-color;
 }
 
 .icon-menu {
@@ -26,13 +26,13 @@
     display: flex;
     align-items: center;
     .logo__img {
-        height: 80px;
-        width: 80px;
+        height: $header;
+        width: $header;
     }
     .logo__texto {
         color: $primary-color;
-        font-weight: $densidad-bold;
-        font-size: $fuente-big;
+        font-weight: $densidad-900;
+        font-size: $fuente-titulo;
     }
 }
 
@@ -49,7 +49,7 @@
         align-items: center;
     }
     .menu__link {
-        height: 80px;
+        height: $header;
         padding: 0 30px;
         display: flex;
         align-items: center;
@@ -88,7 +88,7 @@
                 color: $primary-color;
                 background-color: $color-white;
                 font-weight: $densidad-normal;
-                border-bottom: 1px solid rgba(0, 0, 0, .5);
+                border-bottom: 1px solid$border-color-opacity;
             }
             .menu__link:hover,
             .select {
@@ -107,5 +107,5 @@
 
 main {
     position: relative;
-    top: 80px;
+    top: $header;
 }
