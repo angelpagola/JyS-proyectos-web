@@ -1,9 +1,9 @@
-.columna__33 {
-    width: 30%;
-}
-
 .columna__25 {
     width: 24%;
+}
+
+.columna__33 {
+    width: 30%;
 }
 
 .columna__50 {
@@ -12,4 +12,31 @@
 
 .columna__75 {
     width: 74%;
+}
+
+@media screen and (max-width: 900px) {
+    .columna__25 {
+        width: 49%;
+    }
+    .columna__33 {
+        width: 49%;
+    }
+    .columna__50 {
+        width: 49%;
+    }
+    .columna__75 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .columna__25 {
+        width: 100%;
+    }
+    .columna__33 {
+        width: 100%;
+    }
+    .columna__50 {
+        width: 100%;
+    }
 }

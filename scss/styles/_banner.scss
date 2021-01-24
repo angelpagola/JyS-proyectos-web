@@ -1,6 +1,6 @@
 .banner {
     position: relative;
-    height: 400px;
+    height: 450px;
     /*  display: flex;
     align-items: center;
     justify-content: center; */
@@ -10,40 +10,71 @@
         height: 100%;
         width: 100%;
         object-fit: cover;
+        object-position: bottom;
     }
     .banner__descripcion {
         position: absolute;
         color: $color-white;
         /*  top: 100px;
         left: 50px; */
-        left: 100px;
+        left: 80px;
+        width: 100%;
         .banner__titulo {
-            font-size: 50px;
+            font-size: $fuente-big;
             font-weight: $densidad-bold;
-            margin: 10px;
+            margin: 20px;
         }
         .banner__txt1 {
-            font-size: 30px;
-            margin: 10px;
+            font-size: $fuente-titulo;
+            margin: 20px;
         }
         .banner__txt2 {
-            font-size: 20px;
-            margin: 10px;
+            margin: 20px;
+            font-size: $fuente-subtitulo;
         }
         .banner__link {
             display: block;
             color: $color-white;
-            font-size: $fuente-titulo;
+            font-size: $fuente-subtitulo;
             padding: 10px;
             box-sizing: border-box;
-            margin: 10px;
+            margin: 20px;
             border: 2px solid $color-white;
             width: 150px;
             text-align: center;
-            font-weight: $densidad-bold;
+            transition: all 0.5s;
         }
         .banner__link:hover {
             background-color: $color-black-opacity;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .banner {
+        .banner__descripcion {
+            text-align: center;
+            left: 0px;
+            .banner__titulo {
+                font-size: $fuente-big;
+                font-weight: $densidad-bold;
+                margin: 20px;
+                text-align: center;
+            }
+            .banner__txt1 {
+                font-size: $fuente-titulo;
+                margin: 20px;
+            }
+            .banner__txt2 {
+                margin: 20px;
+                font-size: $fuente-subtitulo;
+            }
+            .banner__link {
+                margin: auto;
+            }
+            .banner__link:hover {
+                background-color: $color-black-opacity;
+            }
         }
     }
 }
