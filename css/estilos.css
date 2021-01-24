@@ -8,10 +8,11 @@
 /*Tamaño header*/
 /*Tamaño footer*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 * {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 a {
@@ -71,8 +72,7 @@ a {
 }
 .logo .logo__texto {
   color: #dc143c;
-  font-weight: 900;
-  font-size: 22px;
+  font-size: 26px;
 }
 
 .menu {
@@ -158,7 +158,7 @@ main .container .grupo {
 main .container .grupo .grupo__titulo {
   width: 100%;
   text-align: center;
-  font-size: 22px;
+  font-size: 24px;
   color: #dc143c;
   padding: 10px 0;
   margin: 10px 0;
@@ -335,7 +335,7 @@ main .container .grupo .grupo__contenido .columna:hover {
 .banner .banner__descripcion .banner__link {
   display: block;
   color: #ffffff;
-  font-size: 22px;
+  font-size: 24px;
   padding: 10px;
   box-sizing: border-box;
   margin: 10px;
@@ -361,7 +361,7 @@ main .container .grupo .grupo__contenido .columna:hover {
 .item__titulo a {
   display: block;
   color: #dc143c;
-  font-size: 22px;
+  font-size: 24px;
   margin: 10px;
   font-weight: bold;
   transition: all 0.5s;
@@ -371,7 +371,7 @@ main .container .grupo .grupo__contenido .columna:hover {
 }
 
 .item__precio {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: bold;
 }
 
@@ -412,7 +412,7 @@ main .container .grupo .grupo__contenido .columna:hover {
   border: 1px solid rgba(0, 0, 0, 0.4);
   display: block;
   width: 100%;
-  font-size: 22px;
+  font-size: 24px;
   text-align: center;
   color: #dc143c;
   font-weight: bold;
@@ -497,7 +497,7 @@ main .container .grupo .grupo__contenido .columna:hover {
 }
 .main-footer .footer__titulo-contenedor .main-footer__titulo {
   color: #dc143c;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: bold;
 }
 .main-footer .datos-contenedor {
@@ -546,6 +546,18 @@ main .container .grupo .grupo__contenido .columna:hover {
 }
 .main-footer .datos-contenedor .datos a {
   color: #000000;
+}
+
+@media screen and (max-width: 900px) {
+  .main-footer .footer__titulo-contenedor .main-footer__titulo {
+    font-size: 20px;
+  }
+  .main-footer .datos-contenedor .sociales {
+    width: 40%;
+  }
+  .main-footer .datos-contenedor .datos {
+    font-size: 12px;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

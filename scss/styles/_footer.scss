@@ -66,3 +66,21 @@
         }
     }
 }
+
+@media screen and (max-width: 900px) {
+    .main-footer {
+        .footer__titulo-contenedor {
+            .main-footer__titulo {
+                font-size: $fuente-subtitulo;
+            }
+        }
+        .datos-contenedor {
+            .sociales {
+                width: 40%;
+            }
+            .datos {
+                font-size: $fuente-alternativo;
+            }
+        }
+    }
+}

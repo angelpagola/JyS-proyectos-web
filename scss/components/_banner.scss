@@ -30,6 +30,7 @@
                 .slides__contenido__link {
                     margin: 5px;
                     display: block;
+                    font-size: $fuente-texto;
                     width: 50%;
                     background-color: $primary-color-opacity;
                     color: $color-white;
@@ -125,6 +126,32 @@
             border: none;
             height: 5px;
             margin-top: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .slides {
+        .slides-container {
+            .slides__section {
+                .slides__contenido {
+                    padding: 20px;
+                    .slides__contenido__titulo {
+                        font-size: $fuente-titulo;
+                        margin: 5px;
+                    }
+                    .slides__contenido__texto {
+                        font-size: $fuente-texto;
+                        margin: 5px;
+                    }
+                    .slides__contenido__link {
+                        font-size: $fuente-texto;
+                    }
+                }
+            }
+        }
+        .slides-navigation a {
+            font-size: $fuente-texto;
         }
     }
 }
