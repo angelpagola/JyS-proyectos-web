@@ -41,3 +41,16 @@ main {
         }
     }
 }
+
+@media screen and (max-width: 650px) {
+    main {
+        .container {
+            .grupo {
+                .grupo__contenido {
+                    justify-content: center;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

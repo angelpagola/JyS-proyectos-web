@@ -13,7 +13,6 @@
     }
     .articulo__fecha {
         font-size: $fuente-texto;
-        font-weight: $densidad-bold;
         padding: 5px;
         box-sizing: border-box;
         text-align: left;
@@ -21,8 +20,9 @@
     .articulo__contenido {
         display: flex;
         margin-top: 10px;
+        align-items: center;
         .img__link {
-            height: 150px;
+            height: 180px;
             width: 250px;
             .articulo__img {
                 width: 100%;
@@ -39,9 +39,10 @@
             flex-direction: column;
             justify-content: space-between;
             .read__descripcion {
-                font-weight: $densidad-bold;
+                /* font-weight: $densidad-bold; */
             }
             .read__more {
+                margin-top: 20px;
                 color: $primary-color;
                 font-weight: $densidad-bold;
                 font-style: italic;
